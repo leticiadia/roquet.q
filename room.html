@@ -9,31 +9,19 @@
         <title>Rocket.Q - Perguntas & Respostas </title>
         <link rel="stylesheet" href="/styles/global.css">
         <link rel="stylesheet" href="/styles/room.css">
+        <link rel="stylesheet" href="/styles/modal.css">
     </head>
 
     <body>
         <div id="room" class="content">
             <header>
-                <a href="#">
-                    <div id="logo">
-                        <div id="blue-box">
-                            <div id="white-circle">
-                                <div id="blue-smallCircle"></div>
-                            </div>
-                            <div id="geometricForm"></div>
-                        </div>
-                        <p id="text-1">rocket</p>
-                        <div id="blue-circle"></div>
-                        <p>q</p>
+                <div id="logo">
+                    <div id="blue-box">
+                        <img src="/assets/icon-logo.svg" alt="icone da logo" id="icon-logo">
                     </div>
-                </a>
-                <div class="buttons">
-                    <div class="button outlined">
-                        #323243
-                        <img src="assets/copy.svg" alt="copiar número da sala">
-                    </div>
-
-                    <a href="#" class="button"><img src="assets/users-white.svg" alt="criar uma sala">Criar Sala</a>
+                    <p id="text-1">rocket</p>
+                    <div id="blue-circle"></div>
+                    <p>q</p>
                 </div>
             </header>
 
@@ -64,7 +52,7 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/avatar.svg" alt="Avatar">
+                                    <img src="assets/user.svg" alt="user">
                                 </div>
 
                                 <div class="question">
@@ -76,9 +64,73 @@
                                 <a href="#" class="delete"><img src="assets/trash.svg" alt="Excluir">Excluir</a>
                             </div>
                         </div>
+
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assets/user.svg" alt="user">
+                                </div>
+
+                                <div class="question">
+                                    <p>O que é JavaScript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check"><img src="assets/check.svg" alt="Marcar como lida">Marcar como lida</a>
+                                <a href="#" class="delete"><img src="assets/trash.svg" alt="Excluir">Excluir</a>
+                            </div>
+                        </div>
+
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assets/user.svg" alt="user">
+                                </div>
+
+                                <div class="question">
+                                    <p>Você já sabe quais as bases que precisa melhorar para alcançar o próximo nível?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check"><img src="assets/check.svg" alt="Marcar como lida">Marcar como lida</a>
+                                <a href="#" class="delete"><img src="assets/trash.svg" alt="Excluir">Excluir</a>
+                            </div>
+                        </div>
+
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assets/user.svg" alt="user">
+                                </div>
+
+                                <div class="question">
+                                    <p>O que é TypeScript</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="delete"><img src="assets/trash.svg" alt="Excluir">Excluir</a>
+                            </div>
+                        </div>   
                     </div>
                 </section>
             </main>
         </div>    
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+                <form action="">
+                    <label class="sr-only" for="password">Digite a sua senha admin</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
